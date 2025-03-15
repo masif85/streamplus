@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Payment Information{% endblock %}
+
+{% block body %}
+    <h1>Step 3: Payment Information</h1>
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn btn-secondary" formaction="{{ path('app_address_info') }}">Back</button>
+        <button class="btn btn-primary">Next</button>
+    {{ form_end(form) }}
+{% endblock %}

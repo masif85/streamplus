@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Address Information{% endblock %}
+
+{% block body %}
+    <h1>Step 2: Address Information</h1>
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn btn-secondary" formaction="{{ path('app_register') }}">Back</button>
+        <button class="btn btn-primary">Next</button>
+    {{ form_end(form) }}
+{% endblock %}
